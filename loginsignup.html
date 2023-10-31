@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SDSsoftwares AI - Login/Signup</title>
+    <style>
+      /* ... (previously defined styles) */
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        width: 80%;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-container {
+        flex: 1;
+        background: url("your-animated-image.gif") center/cover no-repeat;
+        animation: slideIn 1s ease;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      .form-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        animation: slideIn 1s ease;
+      }
+
+      .form {
+        text-align: center;
+        padding: 40px;
+      }
+
+      .input-group {
+        margin: 15px 0;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: #0082c8;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background: #005580;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="ayye monk.jpg" alt="monk-ai guy" />
+      </div>
+      <div class="form-container">
+        <div class="form">
+          <h2>Welcome to AI Support</h2>
+          <div class="input-group">
+            <input type="text" placeholder="Your Email" />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Set Password" />
+          </div>
+          <button onclick="signIn()"><a href="index.html">Sign Up</a></button>
+          <!-- <p>Don't have an account? <a href="#">Sign Up</a></p> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
